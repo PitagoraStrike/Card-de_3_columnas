@@ -1,0 +1,183 @@
+/*
+          MATERIAL:
+Colores
+    Background: #333
+    Tarjetas
+        Orange: hsl(31, 77%, 52%)
+        Cyan: hsl(184, 100%, 22%)
+        Dark cyan: hsl(179, 100%, 13%)
+
+    Texto
+        Blanco al 0.75 de opacidad
+Fuentes de la página
+    Títulos
+        https://fonts.google.com/specimen/Big+Shoulders+Display
+        Estilo 600
+    Textos
+        https://fonts.google.com/specimen/Lexend+Deca
+        Estilo 400
+*/
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  background: #eee;
+  /*Le agregamos text-align: center; para que el elemento .article se centre*/
+  text-align: center;
+  /*
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  */
+}
+
+.article{
+  width: 100%;
+  height: 500px;
+  margin: 25vh auto;
+  /*Colocamos este font-size: 0; por que al momento de colocar el display: inline-block;
+    en nuestro elemento .card va haber un espaciado entre estos elementos y "Flexbox"
+    vino a solucionar esto pero este font-size: 0; es un pequeño truco para solucionar
+    esto pero el texto se perdera por que es font-size: 0; y tenemos que colocarle
+    este font-size a cada tarjeta .card para recuperar el texto y que no se pierda.*/
+  font-size: 0;
+}
+
+.card{
+  position: relative;
+  /*Colocamos el display: inline-block; para que las tarjetas se comporten como
+    bloque para poder posicionarlas pero tambien como en linea para que las
+    se comporten en linea es decir en la misma linea(horizontalmente)*/
+  display: inline-block;
+  width: 300px;
+  height: 100%;
+  padding-top: 3em;
+  padding-left: 2em;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.tit__art{
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: rgb(255 255 255 / .75);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.p__des{
+  width: 220px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: rgb(255 255 255 / .75);
+  line-height: 28px;
+}
+
+.card__sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+
+.a__button__sedans{
+  position: absolute;
+  display: block;
+  bottom: 50px;
+  padding: .7em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(31, 77%, 52%);
+  background-color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+
+.card__suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.a__button__suvs{
+  position: absolute;
+  display: block;
+  bottom: 50px;
+  padding: .7em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  text-align: center;
+  color: hsl(184, 100%, 22%);
+  background-color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+
+.card__luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+
+.a__button__luxury{
+  position: absolute;
+  display: block;
+  bottom: 50px;
+  width: 160px;
+  padding: .7em 2em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: hsl(179, 100%, 13%);
+  background-color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.button:hover{
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.attribution{
+  position: relative;
+  display: flex;
+  margin-top: -150px;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  color: #000;
+  overflow: hidden;
+}
+
+.attribution__a{
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* adaptamos los derechos reservados */
+
+@media (max-width: 900px) {
+
+  .article{
+    margin: 5vh auto;
+  }
+  .attribution{
+    margin-bottom: 30px;
+    margin-top: 520px;
+
+  }
+}
+
+@media (max-width: 599px) {
+  .attribution{
+    margin-top: 1020px;
+
+  }
+}
+
+@media (max-width: 375px) {
+  .card{
+    margin: 0 1rem;
+  }
+}

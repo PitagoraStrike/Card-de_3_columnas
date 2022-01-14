@@ -26,7 +26,7 @@ respecto a servicios automotrices y lo más parecido posible al diseño original
 - Capaz de la manipulacion de contenedores con la sintaxis FLEXBOX
 
 ### LINK
-Solution URL: [https://design-card-victor.netlify.app/](https://design-card-victor.netlify.app/)
+Solution URL: [https://vigorous-turing-66b7e8.netlify.app/](https://vigorous-turing-66b7e8.netlify.app/)
 
 ### ¿COMENTARIOS?
 Si tienes comentarios o dudas no dudes en escribirme en mis redes sociales
